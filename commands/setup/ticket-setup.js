@@ -31,14 +31,25 @@ module.exports = {
         }))
         .setColor(ee.color)
 
-      const Buttons = new MessageActionRow()
-        .addComponents([generalHelp, bugReport, orderBot])
+// Кнопки 4 в ряд ============================================================
+            const Buttons = new MessageActionRow()
+                .addComponents([generalHelp, bugReport, orderBot, sourceCode])
+            const buttonsRow = [Buttons]
+// Кнопки по 2 в 2 ряда =======================================================
+//             const Buttons = new MessageActionRow()
+//                .addComponents([generalHelp, bugReport])
+//            const Buttons2 = new MessageActionRow()
+//                .addComponents([sourceCode, orderBot])
+//            const buttonsRow = [Buttons, Buttons2]
+//============================================================================    
 
-      const Buttons2 = new MessageActionRow()
-        .addComponents([sourceCode])
-      //.addComponents([staffApply, partnerApply, sourceCode])
-      const buttonsRow = [Buttons, Buttons2]
-
+// по умолчанию 6 кнопок (по 3 в ряд) ========================================
+//            const Buttons = new MessageActionRow()
+//                .addComponents([generalHelp, bugReport, orderBot])
+//            const Buttons2 = new MessageActionRow()
+//                .addComponents([staffApply, partnerApply, sourceCode])
+//            const buttonsRow = [Buttons, Buttons2]
+//============================================================================  
       message.channel.send({
         embeds: [embed],
         components: buttonsRow

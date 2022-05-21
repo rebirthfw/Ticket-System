@@ -70,7 +70,7 @@ client.events = new Collection();
 client.aliases = new Collection();
 client.cooldowns = new Collection();
 client.allEmojis = require("./botconfig/emojis.json");
-client.owners = ["398464358608535552"];
+client.owners = ["977292472579391539"];
 
 client.setMaxListeners(0);
 require('events').defaultMaxListeners = 0;

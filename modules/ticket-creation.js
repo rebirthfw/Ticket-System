@@ -99,7 +99,7 @@ module.exports = async (client) => {
                                 .setStyle('DANGER'),
                             );
                         channel.send({
-                             content: `Добро пожаловать <@${interaction.user.id}>,Wait For <@&954245147040817253>`,
+                             content: `Добро пожаловать <@${interaction.user.id}>,Wait For <@&957560771263483915>`,
                             embeds: [GeneralHelpEmbed],
                             components: [closeTicket]
                         }).then((msg) => msg.pin())

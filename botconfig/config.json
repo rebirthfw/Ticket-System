@@ -4,8 +4,8 @@
     "mongo": "MONGO"
   },
   "ticket_category": {
+    "bugReport": "977296889445748816",   
     "generalHelp": "977294057535602749",
-    "bugReport": "977296889445748816",
     "orderBot": "977294469353320518",
     "staffApply": "977294888859238440",
     "partnerApply": "977297417806418010",

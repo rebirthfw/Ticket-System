@@ -35,9 +35,11 @@ module.exports = {
           }
         });
       });
-      message.reply({ embeds:[new MessageEmbed()
-        .setColor(ee.color)
-        .setTitle(`${client.allEmojis.y} Successfully Reloaded Commands`)]});
+      message.reply({
+        embeds: [new MessageEmbed()
+          .setColor(ee.color)
+          .setTitle(`${client.allEmojis.y} Successfully Reloaded Commands`)]
+      });
     } catch (e) {
       console.log(e)
     }
